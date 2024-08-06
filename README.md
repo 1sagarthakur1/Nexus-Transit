@@ -34,61 +34,22 @@ Nexus Transit is a Spring Boot-based REST API project designed to facilitate the
 - VALIDATION
 - LOMBOK
 - JWT
-<!-- - SWAGGER UI -->
 
-## Modules
-- Restaurant Module
-- Customer Module
-- Admin Module
-- Food Module
-- Cart Module 
-- Order Module
-- Bill Module
+## Main Modules
+- User Module
+- Transporter_User Module
+- Vehicle Module
+- Vehicle Slot Module
+- Luggage Module 
+- Payment Module
+- Delivery Module
 - Exception Handler Module
 
 
 ## System Structure
-
-The REST API allows a Customer to **Signup, Login** & **Browse** through the food, view products as well as the Restaurant and add food to **Cart** wishlist, as well as for the Restaurant to **View** all the **Orders, Customers & food**.
-
+The REST API allows a User to **Signup, Login** & **Browse** through the food, view products as well as the Restaurant and add food to **Cart** wishlist, as well as for the Restaurant to **View** all the **Orders, Customers & food**.
 Restaurants can **Add, Update, View, and Delete** **Food**  from the **Database**.
-
 Administrator can **View request Delete Account List** and **Delete the Account As Per Request**.
-
-<!-- ## About
-This project is a team project of 4 members, This is an online ordering and delivery Rest API. We built this Rest API project Within 5 days and this is our project during **the Masai curriculum (Construct Week)** [Demo Video](https://drive.google.com/file/d/1URK-TPSboVi9UFAYG8AROuHEMNi-4vzr/view).-->
-
-## Feature
-- Restaurant
-    - 
-    - Signup
-    - Login & Logout
-    - View all Food
-    - View all Orders of a Customer as orders that Restaurant
-    - Add New Food to Database
-    - Remove Food from the Database
-    - Update Food in Database 
-    - Update their Profile
-
-- Customer
-    -
-    - Signup 
-    - Login & Logout
-    - Update all Personal Details 
-    - View all Food.
-    - Add Food to the Cart
-    - Update Food Quantity in the Cart 
-    - Delete Food from the Cart
-    - Empty Cart
-    - Add Order
-    - Cancel Order
-    - View Orders
-
-- Administrator
-    -
-    - Login
-    - View Deleted Account Request
-    - Delete Account as per Request
 
 ## Installation
 

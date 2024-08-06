@@ -155,5 +155,4 @@ Configures JWT-based authentication for securing the REST API.
 <!-- ![FlowChartYourDoorFood](https://user-images.githubusercontent.com/107456964/220468355-2e96143c-3811-433b-ae7a-a7f97d00fa53.jpg) -->
 
 # Entity Relationship Diagram
-
-<img src="Images/Your Door Food Entity Relationship Diagram.jpg" />
+- https://dbdiagram.io/d/Transpot-Daigram-66a204068b4bb5230e4f45a7

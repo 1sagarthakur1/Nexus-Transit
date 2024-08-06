@@ -46,10 +46,76 @@ Nexus Transit is a Spring Boot-based REST API project designed to facilitate the
 - Exception Handler Module
 
 
-## System Structure
-The REST API allows a User to **Signup, Login** & **Browse** through the food, view products as well as the Restaurant and add food to **Cart** wishlist, as well as for the Restaurant to **View** all the **Orders, Customers & food**.
-Restaurants can **Add, Update, View, and Delete** **Food**  from the **Database**.
-Administrator can **View request Delete Account List** and **Delete the Account As Per Request**.
+## System Architecture: Nexus Transit
+**1. Controller Layer:**
+    ***Controllers:***
+    Handles incoming HTTP requests and routes them to the appropriate service methods.
+    Endpoints:
+    - /users: Manages user-related operations.
+    - /transporters: Manages transporter user operations.
+    - /vehicles: Manages vehicle information and availability.
+    - /vehicle-slots: Manages vehicle slot bookings and availability.
+    - /luggage: Manages luggage details and associated booking.
+    - /payments: Handles payment transactions and records.
+    - /deliveries: Manages delivery status and tracking.
+****Example: UserController, VehicleController, PaymentController.****
+**2. Repository Layer:**
+     ***Repositories:***
+Provides database access by extending Spring Data JPA repositories for CRUD operations on each module.
+Repositories:
+UserRepository: Manages User entity operations.
+TransporterUserRepository: Manages Transporter_User entity operations.
+VehicleRepository: Manages Vehicle entity operations.
+VehicleSlotRepository: Manages VehicleSlot entity operations.
+LuggageRepository: Manages Luggage entity operations.
+PaymentRepository: Manages Payment entity operations.
+DeliveryRepository: Manages Delivery entity operations.
+Technologies: Spring Data JPA.
+3. Models Layer:
+Entities/Models:
+Represents the core business objects in the system.
+Entities:
+User: Stores user information and credentials.
+Transporter_User: Stores transporter-specific user information.
+Vehicle: Stores vehicle details like type, capacity, and availability.
+VehicleSlot: Stores details of vehicle availability slots for booking.
+Luggage: Stores information about the luggage being transported.
+Payment: Stores payment details for bookings.
+Delivery: Stores information about the delivery process and status.
+4. Service Layer:
+Services:
+Contains business logic and interacts with repositories to perform operations.
+Services:
+UserService: Handles operations related to user management.
+TransporterUserService: Manages transporter user operations.
+VehicleService: Manages vehicle-related operations and availability.
+VehicleSlotService: Manages booking slots and slot availability.
+LuggageService: Handles operations related to luggage management.
+PaymentService: Manages payment processing and transaction records.
+DeliveryService: Handles delivery tracking and updates.
+Technologies: Spring Service, Transaction Management.
+5. Exception Handler:
+Global Exception Handler:
+Manages application-wide exception handling, providing consistent error responses.
+Components:
+@ControllerAdvice: Centralized error handling across all controllers.
+Custom exception classes (e.g., BookingNotFoundException, PaymentFailedException).
+Custom error response model.
+6. Security Configuration:
+JWT Configuration:
+Configures JWT-based authentication for securing the REST API.
+Components:
+JwtTokenProvider: Generates and validates JWT tokens.
+JwtAuthenticationFilter: Filters incoming requests and validates JWT tokens.
+SecurityConfig: Configures security settings, including protected routes and authentication entry points.
+Technologies: Spring Security, JWT (JSON Web Token).
+7. Config Layer:
+Application Configuration:
+Contains application-specific configurations, such as database settings, security configurations, and environment variables.
+Components:
+application.yml or application.properties: Configuration for database, security, and other settings.
+JWT Configurations: Secret keys, token validity period, etc.
+Technologies: Spring Boot Configuration Properties.
 
 ## Installation
 

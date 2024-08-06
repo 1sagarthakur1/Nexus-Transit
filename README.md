@@ -53,10 +53,10 @@ Nexus Transit is a Spring Boot-based REST API project designed to facilitate the
 Handles incoming HTTP requests and routes them to the appropriate service methods.
 
 **Endpoints:**
-- `/users`: Manages user-related operations.
-- `/transporters`: Manages transporter user operations.
+- `/user`: Manages user-related operations.
+- `/transporters_User`: Manages transporter user operations.
 - `/vehicles`: Manages vehicle information and availability.
-- `/vehicle-slots`: Manages vehicle slot bookings and availability.
+- `/vehicleslots`: Manages vehicle slot bookings and availability.
 - `/luggage`: Manages luggage details and associated booking.
 - `/payments`: Handles payment transactions and records.
 - `/deliveries`: Manages delivery status and tracking.
@@ -116,7 +116,7 @@ Manages application-wide exception handling, providing consistent error response
 
 **Components:**
 - `@ControllerAdvice`: Centralized error handling across all controllers.
-- Custom exception classes (e.g., `BookingNotFoundException`, `PaymentFailedException`).
+- Custom exception classes (e.g., `UserException`, `Luggage`).
 - Custom error response model.
 
 **6. Security Configuration:**
@@ -130,11 +130,6 @@ Configures JWT-based authentication for securing the REST API.
 - `SecurityConfig`: Configures security settings, including protected routes and authentication entry points.
 
 **Technologies:** Spring Security, JWT (JSON Web Token).
-
-**7. Config Layer:**
-
-***Application Configuration:***
-Contains application-specific configurations, such as database settings, security configurations, and environment variables.
 
 **Components:**
 - `application.yml` or `application.properties`: Configuration for database, security, and other settings.
@@ -151,7 +146,7 @@ Contains application-specific configurations, such as database settings, securit
 - open the terminal of your editor
 - use  --> git clone (paste link) <-- 
 - after the project is cloned to your folder
-- go to the YourDoorFoodApplication.java file inside com folder
+- go to the Nexus-Transit file inside com folder
 - run as Spring Boot
 
 # FLOW CHART

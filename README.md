@@ -7,35 +7,25 @@
 
 # Nexus Transit
 
- **REST API SERVICE**
+ **Description:**
+Nexus Transit is a Spring Boot-based REST API project designed to facilitate the booking of vehicles for transporting luggage from one location to another. This project allows users to search for available vehicles, book a vehicle based on their requirements, and manage their bookings through the API.
 
-The **Your Door Food** is a REST API, which allows **Customers** to browse the food, **Save** them to **Cart** for the future, perform all the basic fundamental **CRUD** operations like any other **Online Food Ordering and Delivery Application** and place orders as per their requirements. It is also allow **Restaurant** to **Add the food**, and can manage **Cost** and **Quantity**.
+**Key Features:**
+- User Management: Handles user authentication for secure access.
+- Vehicle Booking: Allows users to search for available vehicles, select a vehicle, and book it for transporting luggage.
+- Booking Management: Provides endpoints for users to view, modify, or cancel their bookings.
+- Vehicle Slot Management: Manages the availability and status of vehicles.
+- Error Handling: Custom error responses and exception handling for a seamless user experience.
 
-The **Your Door Food** API also provides **User, Admin Validation & Authentication** for every operation and simplified Exception Handling for layman's easy understanding. 
-
-The API's primary objective is to provide to the Customer  **a Simple & User-Friendly online food ordering Experience.**
-
-The API's Services  will be used by the **Three** categories of users:
-
-- **Admin (Administrator)**
-
-- **User (Customer)** 
-
-- **User (Restaurant)** 
-## Tech Stack
-
-- JAVA
-- SPRING
-- SPRINGBOOT
-- HIBERNATE
-- MAVEN
-- J.D.B.C
-- MYSQL
-- JWT
+## Technologies Used:
+- Spring Boot: Framework for building the RESTful API.
+- JPA/Hibernate: For database interaction and ORM (Object-Relational Mapping).
+- MySQL: Database for storing user, vehicle, and booking information.
+- JWT: For handling authentication.
+- Swagger/OpenAPI: For API documentation and testing.
 <!-- - SWAGGER UI -->
 
 ## Dependencies
-
 - SPRING DATA JPA
 - SPRING BOOT DEVTOOLS
 - SPRING WEB
@@ -47,7 +37,6 @@ The API's Services  will be used by the **Three** categories of users:
 <!-- - SWAGGER UI -->
 
 ## Modules
-
 - Restaurant Module
 - Customer Module
 - Admin Module

@@ -151,7 +151,7 @@ Configures JWT-based authentication for securing the REST API.
 
 # FLOW CHART
 
-<img src="Images/Flow_Chart.jpg" />
+<img src="Images/flow chart.jpg" />
 <!-- ![FlowChartYourDoorFood](https://user-images.githubusercontent.com/107456964/220468355-2e96143c-3811-433b-ae7a-a7f97d00fa53.jpg) -->
 
 # Entity Relationship Diagram
